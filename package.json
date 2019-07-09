@@ -57,5 +57,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "jspmPackage": true,
+  "registry": "npm",
+  "format": "amd"
 }
