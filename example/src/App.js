@@ -52,7 +52,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <h1>Wirecase React Piechart Viewer Demo</h1>
+        <h1>Wirecase React JSON Viewer Demo</h1>
         <WirecaseReactJSONViewer json={testData} />
         <p>
           Following Test JSON Data is rendered above into a Tabular Format using
