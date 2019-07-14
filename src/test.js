@@ -1,7 +1,7 @@
-import WirecaseReactPiechart from './';
+import WirecaseReactJSONViewer from './';
 
-describe('WirecaseReactPiechart', () => {
+describe('WirecaseReactJSONViewer', () => {
   it('is truthy', () => {
-    expect(WirecaseReactPiechart).toBeTruthy();
+    expect(WirecaseReactJSONViewer).toBeTruthy();
   });
 });

@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
-import { checkIfArrayIsAOB, checkIfObjectIsOOB, getFirstEle, getType, loopObject } from './util';
+import {
+  checkIfArrayIsAOB,
+  checkIfObjectIsOOB,
+  getFirstEle,
+  getType,
+  loopObject,
+} from './util';
 
 import PropTypes from 'prop-types';
 import ValueViewer from './ValueViewer';
 
-export default class WirecaseReactPiechart extends Component {
+export default class WirecaseReactJSONViewer extends Component {
   static propTypes = {
     json: PropTypes.any.isRequired,
     tableProps: PropTypes.object,
@@ -47,7 +53,11 @@ export default class WirecaseReactPiechart extends Component {
           })()}
           {keys.map((key, i) => {
             return (
-              <th {...this.props.tdProps} key={i} style={this.constructor.styles.td}>
+              <th
+                {...this.props.tdProps}
+                key={i}
+                style={this.constructor.styles.td}
+              >
                 <span style={{ color: 'rgb(111, 11, 11)' }}>{key}</span>
               </th>
             );
@@ -86,7 +96,10 @@ export default class WirecaseReactPiechart extends Component {
             {loopObject(obj, (v, key) => {
               return (
                 <tr key={key} {...this.props.trProps}>
-                  <td {...this.props.tdProps} style={this.constructor.styles.td}>{`${key}`}</td>
+                  <td
+                    {...this.props.tdProps}
+                    style={this.constructor.styles.td}
+                  >{`${key}`}</td>
                   {this.renderTd(v, key)}
                 </tr>
               );
@@ -120,7 +133,11 @@ export default class WirecaseReactPiechart extends Component {
   }
   renderTd(guess, index) {
     return (
-      <td {...this.props.tdProps} key={index} style={this.constructor.styles.td}>
+      <td
+        {...this.props.tdProps}
+        key={index}
+        style={this.constructor.styles.td}
+      >
         {this.decideAndRender(guess)}
       </td>
     );

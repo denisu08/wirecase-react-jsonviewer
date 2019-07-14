@@ -1,10 +1,10 @@
 {
-  "name": "wirecase-react-piechart",
-  "version": "2.1.0",
+  "name": "wirecase-react-jsonviewer",
+  "version": "2.1.5",
   "description": "Wirecase React Piechart Component. View JSON in beautiful tabular format.",
   "author": "denis.prasetio",
   "license": "MIT",
-  "repository": "denisu08/wirecase-react-piechart",
+  "repository": "denisu08/wirecase-react-jsonviewer",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -57,8 +57,5 @@
   },
   "files": [
     "dist"
-  ],
-  "jspmPackage": true,
-  "registry": "npm",
-  "format": "amd"
+  ]
 }

@@ -1,6 +1,6 @@
 {
-  "name": "wirecase-react-piechart",
-  "homepage": "https://denisu08.github.io/wirecase-react-piechart",
+  "name": "wirecase-react-jsonviewer",
+  "homepage": "https://denisu08.github.io/wirecase-react-jsonviewer",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
@@ -9,7 +9,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-gist": "^1.2.1",
-    "wirecase-react-piechart": "file:..",
+    "wirewirecase-react-jsonviewer": "file:..",
     "react-scripts": "^1.1.4"
   },
   "scripts": {

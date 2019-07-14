@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Gist from 'react-gist';
-import WirecaseReactPiechart from 'wirecase-react-piechart';
+import WirecaseReactJSONViewer from 'wirecase-react-jsonviewer';
 
 var testData = {
   name: 'Narendra',
@@ -53,8 +53,11 @@ export default class App extends Component {
     return (
       <div>
         <h1>Wirecase React Piechart Viewer Demo</h1>
-        <WirecaseReactPiechart json={testData} />
-        <p>Following Test JSON Data is rendered above into a Tabular Format using wirecase-react-piechart</p>
+        <WirecaseReactJSONViewer json={testData} />
+        <p>
+          Following Test JSON Data is rendered above into a Tabular Format using
+          wirecase-react-jsonviewer
+        </p>
         <Gist id="f699b5555245f69a1ce53b05545e6e70" />
       </div>
     );
